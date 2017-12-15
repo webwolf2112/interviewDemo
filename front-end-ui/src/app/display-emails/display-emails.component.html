@@ -1,0 +1,10 @@
+  <div class="grid-container">
+  <div class="email" *ngFor="let email of emails">
+    <p ng-bind-html="email.date">
+      To: {{email.to}} <br>
+      From: {{email.from}} <br>
+      Subject: <span [innerHTML]="toHTML(email.subject)"></span><br>
+      Date: {{email.date}}
+    </p>
+  <div>
+</div>
