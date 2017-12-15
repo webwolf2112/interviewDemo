@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   title = 'Vanessa Henson Conga Developer';
-  subtitle = `Simple project to show why you sould hire me &#9786;`;
+  subtitle = `Simple project to show why you should hire me &#9786;`;
 
   toHTML(input) : any {
     return new DOMParser().parseFromString(input, "text/html").documentElement.textContent;
